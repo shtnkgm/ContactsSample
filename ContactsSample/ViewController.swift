@@ -38,5 +38,7 @@ extension ViewController: CNContactPickerDelegate {
         print("\(contactProperty.key) selected")
         guard let emailAddess = contactProperty.value as? String else { return }
         print(emailAddess)
+        
+        print("isEmailAddess: \(emailAddess.isEmailAddress)")
     }
 }
